@@ -94,6 +94,8 @@ def demo(cfg):
         checkpoint_name=cfg.diffusion_transformer_dir,
         prompt_upsampler_dir=cfg.prompt_upsampler_dir,
         enable_prompt_upsampler=not cfg.disable_prompt_upsampler,
+        enable_text_guardrail=False,
+        enable_video_guardrail=False,
         offload_network=cfg.offload_diffusion_transformer,
         offload_tokenizer=cfg.offload_tokenizer,
         offload_text_encoder_model=cfg.offload_text_encoder_model,
